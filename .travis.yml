@@ -7,4 +7,8 @@ python:
   - "3.3"
   - "3.4"
 
-script: ./run_tests
+before_script:
+ - chmod +x run_tests
+
+script:
+  - ./run_tests
