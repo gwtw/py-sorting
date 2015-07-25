@@ -5,8 +5,12 @@
 import common.helpers as helpers
 
 def sort(list, compare=helpers.compare):
-  for i in range(0, len(list) - 1):
-    for j in range(1, len(list) - i):
-      if compare(list[j - 1], list[j]) > 0:
-        helpers.swap(list, j, j - 1);
+  unsorted_below = len(list)
+  while unsorted_below != 0:
+    last_swap = 0
+    for i in range(1, unsorted_below):
+      if compare(list[i - 1], list[i]) > 0:
+        helpers.swap(list, i, i - 1);
+        last_swap = i
+    unsorted_below = last_swap
   return list
