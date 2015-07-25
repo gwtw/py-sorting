@@ -6,8 +6,11 @@ from common.helpers import swap
 from common.helpers import compare as default_compare
 
 def sort(list, compare=default_compare):
-  for i in range(0, len(list) - 1):
-    for j in range(1, len(list) - i):
-      if compare(list[j - 1], list[j]) > 0:
-        swap(list, j, j - 1);
+  for i in range(0, len(list)):
+    minIndex = i
+    for j in range(i + 1, len(list)):
+      if compare(list[j], list[minIndex]) < 0:
+        minIndex = j
+    if minIndex != i:
+      swap(list, i, minIndex)
   return list

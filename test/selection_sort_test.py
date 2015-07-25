@@ -7,14 +7,14 @@ from base_integer_sort_test import BaseIntegerSortTest
 from base_string_sort_test import BaseStringSortTest
 
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, 'sort'))
-import bubble_sort_optimised
+import selection_sort
 
-class BubbleSortOptimisedTest(unittest.TestCase,
-                              BaseCustomComparisonSortTest,
-                              BaseIntegerSortTest,
-                              BaseStringSortTest):
+class SelectionSortTest(unittest.TestCase,
+                        BaseCustomComparisonSortTest,
+                        BaseIntegerSortTest,
+                        BaseStringSortTest):
   def setUp(self):
-    self.sort = bubble_sort_optimised.sort
+    self.sort = selection_sort.sort
 
 if __name__ == '__main__':
   unittest.main()
