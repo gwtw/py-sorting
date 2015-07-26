@@ -5,17 +5,17 @@
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
+def sort(array, compare=default_compare):
   sorted = False
   while not sorted:
-    sorted = inner_sort(list, 1, compare)
-    sorted = sorted and inner_sort(list, 0, compare)
-  return list
+    sorted = inner_sort(array, 1, compare)
+    sorted = sorted and inner_sort(array, 0, compare)
+  return array
 
-def inner_sort(list, start_i, compare):
+def inner_sort(array, start_i, compare):
   sorted = True
-  for i in range(start_i, len(list) - 1, 2):
-    if compare(list[i], list[i + 1]) > 0:
-      swap(list, i, i + 1)
+  for i in range(start_i, len(array) - 1, 2):
+    if compare(array[i], array[i + 1]) > 0:
+      swap(array, i, i + 1)
       sorted = False
   return sorted

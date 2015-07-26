@@ -5,12 +5,12 @@
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
-  for i in range(0, len(list)):
+def sort(array, compare=default_compare):
+  for i in range(0, len(array)):
     minIndex = i
-    for j in range(i + 1, len(list)):
-      if compare(list[j], list[minIndex]) < 0:
+    for j in range(i + 1, len(array)):
+      if compare(array[j], array[minIndex]) < 0:
         minIndex = j
     if minIndex != i:
-      swap(list, i, minIndex)
-  return list
+      swap(array, i, minIndex)
+  return array

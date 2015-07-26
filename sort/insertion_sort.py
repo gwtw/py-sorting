@@ -4,12 +4,12 @@
 
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
-  for i in range(1, len(list)):
-    item = list[i]
+def sort(array, compare=default_compare):
+  for i in range(1, len(array)):
+    item = array[i]
     indexHole = i
-    while indexHole > 0 and compare(list[indexHole - 1], item) > 0:
-      list[indexHole] = list[indexHole - 1]
+    while indexHole > 0 and compare(array[indexHole - 1], item) > 0:
+      array[indexHole] = array[indexHole - 1]
       indexHole -= 1
-    list[indexHole] = item
-  return list
+    array[indexHole] = item
+  return array

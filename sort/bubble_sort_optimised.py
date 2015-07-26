@@ -5,13 +5,13 @@
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
-  unsorted_below = len(list)
+def sort(array, compare=default_compare):
+  unsorted_below = len(array)
   while unsorted_below != 0:
     last_swap = 0
     for i in range(1, unsorted_below):
-      if compare(list[i - 1], list[i]) > 0:
-        swap(list, i, i - 1);
+      if compare(array[i - 1], array[i]) > 0:
+        swap(array, i, i - 1);
         last_swap = i
     unsorted_below = last_swap
-  return list
+  return array

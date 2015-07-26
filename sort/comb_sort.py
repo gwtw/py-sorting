@@ -7,8 +7,8 @@ import math
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
-  gap = len(list);
+def sort(array, compare=default_compare):
+  gap = len(array);
   shrinkFactor = 1.3;
   swapped = False;
 
@@ -17,10 +17,10 @@ def sort(list, compare=default_compare):
       gap = math.floor(gap / shrinkFactor)
     swapped = False;
     i = 0
-    for i in range(len(list) - gap):
-      if compare(list[i], list[i + gap]) > 0:
-        swap(list, i, i + gap);
+    for i in range(len(array) - gap):
+      if compare(array[i], array[i + gap]) > 0:
+        swap(array, i, i + gap);
         swapped = True;
       i += 1
 
-  return list;
+  return array;

@@ -5,9 +5,9 @@
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
-  for i in range(0, len(list) - 1):
-    for j in range(1, len(list) - i):
-      if compare(list[j - 1], list[j]) > 0:
-        swap(list, j, j - 1);
-  return list
+def sort(array, compare=default_compare):
+  for i in range(0, len(array) - 1):
+    for j in range(1, len(array) - i):
+      if compare(array[j - 1], array[j]) > 0:
+        swap(array, j, j - 1);
+  return array

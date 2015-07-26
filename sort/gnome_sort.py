@@ -5,13 +5,13 @@
 from common.helpers import swap
 from common.helpers import default_compare
 
-def sort(list, compare=default_compare):
+def sort(array, compare=default_compare):
   pos = 1;
-  while pos < len(list):
-    if compare(list[pos], list[pos - 1]) >= 0:
+  while pos < len(array):
+    if compare(array[pos], array[pos - 1]) >= 0:
       pos += 1
     else:
-      swap(list, pos, pos - 1)
+      swap(array, pos, pos - 1)
       if pos > 1:
         pos -= 1;
-  return list;
+  return array;
