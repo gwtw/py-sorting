@@ -2,7 +2,6 @@
 # Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>
 # Released under the MIT license <http://github.com/GrowingWithTheWeb/py-sorting/blob/master/LICENSE>
 
-from common.helpers import swap
 from common.helpers import default_compare
 
 def sort(array, compare=default_compare):
@@ -11,7 +10,7 @@ def sort(array, compare=default_compare):
     if compare(array[pos], array[pos - 1]) >= 0:
       pos += 1
     else:
-      swap(array, pos, pos - 1)
+      array[pos], array[pos - 1] = array[pos - 1], array[pos]
       if pos > 1:
         pos -= 1;
   return array;

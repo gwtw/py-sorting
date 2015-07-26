@@ -8,8 +8,3 @@ def default_compare(a, b):
   elif a > b:
     return 1
   return 0
-
-def swap(list, a, b):
-  temp = list[a]
-  list[a] = list[b]
-  list[b] = temp

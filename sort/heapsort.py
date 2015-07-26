@@ -4,7 +4,6 @@
 
 import math
 
-from common.helpers import swap
 from common.helpers import default_compare
 
 def sort(array, compare=default_compare):
@@ -12,7 +11,7 @@ def sort(array, compare=default_compare):
   build_heap(array, heap_size, compare)
   while heap_size > 1:
     heap_size -= 1
-    swap(array, 0, heap_size)
+    array[0], array[heap_size] = array[heap_size], array[0]
     heapify(array, heap_size, 0, compare)
   return array
 
@@ -25,7 +24,7 @@ def heapify(array, heap_size, i, compare):
   if right < heap_size and compare(array[right], array[largest]) > 0:
     largest = right
   if largest != i:
-    swap(array, i, largest)
+    array[i], array[largest] = array[largest], array[i]
     heapify(array, heap_size, largest, compare)
 
 def build_heap(array, heap_size, compare):

@@ -4,7 +4,6 @@
 
 import math
 
-from common.helpers import swap
 from common.helpers import default_compare
 
 def sort(array, compare=default_compare):
@@ -19,7 +18,7 @@ def sort(array, compare=default_compare):
     i = 0
     for i in range(len(array) - gap):
       if compare(array[i], array[i + gap]) > 0:
-        swap(array, i, i + gap);
+        array[i], array[i + gap] = array[i + gap], array[i]
         swapped = True;
       i += 1
 

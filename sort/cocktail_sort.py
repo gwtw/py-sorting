@@ -4,7 +4,6 @@
 
 import math
 
-from common.helpers import swap
 from common.helpers import default_compare
 
 def sort(array, compare=default_compare):
@@ -15,13 +14,13 @@ def sort(array, compare=default_compare):
     swapped = False
     for i in range(start + 1, end):
       if compare(array[i], array[i + 1]) > 0:
-        swap(array, i, i + 1)
+        array[i], array[i + 1] = array[i + 1], array[i]
         swapped = True
     if not swapped:
       break
     swapped = False
     for i in range(end, start, -1):
       if compare(array[i], array[i + 1]) > 0:
-        swap(array, i, i + 1)
+        array[i], array[i + 1] = array[i + 1], array[i]
         swapped = True
   return array;
