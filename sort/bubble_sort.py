@@ -3,7 +3,7 @@
 # Released under the MIT license <http://github.com/GrowingWithTheWeb/py-sorting/blob/master/LICENSE>
 
 from common.helpers import swap
-from common.helpers import compare as default_compare
+from common.helpers import default_compare
 
 def sort(list, compare=default_compare):
   for i in range(0, len(list) - 1):

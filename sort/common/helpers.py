@@ -2,7 +2,7 @@
 # Copyright 2015 Daniel Imms <http://www.growingwiththeweb.com>
 # Released under the MIT license <http://github.com/GrowingWithTheWeb/py-sorting/blob/master/LICENSE>
 
-def compare(a, b):
+def default_compare(a, b):
   if a < b:
     return -1
   elif a > b:
