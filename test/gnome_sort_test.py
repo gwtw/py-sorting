@@ -10,9 +10,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, 'sort'))
 import gnome_sort
 
 class GnomeSortTest(unittest.TestCase,
-                     BaseCustomComparisonSortTest,
-                     BaseIntegerSortTest,
-                     BaseStringSortTest):
+                    BaseCustomComparisonSortTest,
+                    BaseIntegerSortTest,
+                    BaseStringSortTest):
   def setUp(self):
     self.sort = gnome_sort.sort
 

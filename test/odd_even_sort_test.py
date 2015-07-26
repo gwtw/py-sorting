@@ -7,14 +7,14 @@ from base_integer_sort_test import BaseIntegerSortTest
 from base_string_sort_test import BaseStringSortTest
 
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, 'sort'))
-import comb_sort
+import odd_even_sort
 
-class CombSortTest(unittest.TestCase,
-                   BaseCustomComparisonSortTest,
-                   BaseIntegerSortTest,
-                   BaseStringSortTest):
+class OddEvenSortTest(unittest.TestCase,
+                      BaseCustomComparisonSortTest,
+                      BaseIntegerSortTest,
+                      BaseStringSortTest):
   def setUp(self):
-    self.sort = comb_sort.sort
+    self.sort = odd_even_sort.sort
 
 if __name__ == '__main__':
   unittest.main()
