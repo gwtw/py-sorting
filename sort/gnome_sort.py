@@ -7,7 +7,6 @@ from common.helpers import default_compare
 
 def sort(list, compare=default_compare):
   pos = 1;
-
   while pos < len(list):
     if compare(list[pos], list[pos - 1]) >= 0:
       pos += 1
@@ -15,5 +14,4 @@ def sort(list, compare=default_compare):
       swap(list, pos, pos - 1)
       if pos > 1:
         pos -= 1;
-
   return list;

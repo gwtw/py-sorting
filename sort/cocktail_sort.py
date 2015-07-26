@@ -11,21 +11,17 @@ def sort(list, compare=default_compare):
   start = -1
   end = len(list) - 2
   swapped = True
-
   while swapped:
     swapped = False
     for i in range(start + 1, end):
       if compare(list[i], list[i + 1]) > 0:
         swap(list, i, i + 1)
         swapped = True
-
     if not swapped:
       break
-
     swapped = False
     for i in range(end, start, -1):
       if compare(list[i], list[i + 1]) > 0:
         swap(list, i, i + 1)
         swapped = True
-
   return list;
