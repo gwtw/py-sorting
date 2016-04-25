@@ -38,4 +38,3 @@ def bottomUpMerge(array, leftPosition, chunkSize, workArray, compare):
       
   for i in range(leftPosition, endPosition + 1):
     array[i] = workArray[i - leftPosition]
-  
