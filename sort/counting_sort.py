@@ -23,4 +23,4 @@ def sort(array, maxValue=None):
       sortedIndex += 1
       buckets[i] -= 1
   
-  return array;
+  return array
