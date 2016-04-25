@@ -10,9 +10,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, 'sort'))
 import cocktail_sort
 
 class CocktailSortTest(unittest.TestCase,
-                     BaseCustomComparisonSortTest,
-                     BaseIntegerSortTest,
-                     BaseStringSortTest):
+                       BaseCustomComparisonSortTest,
+                       BaseIntegerSortTest,
+                       BaseStringSortTest):
   def setUp(self):
     self.sort = cocktail_sort.sort
 

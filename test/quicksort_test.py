@@ -10,9 +10,9 @@ sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir, 'sort'))
 import quicksort
 
 class QuicksortTest(unittest.TestCase,
-                      BaseCustomComparisonSortTest,
-                      BaseIntegerSortTest,
-                      BaseStringSortTest):
+                    BaseCustomComparisonSortTest,
+                    BaseIntegerSortTest,
+                    BaseStringSortTest):
   def setUp(self):
     self.sort = quicksort.sort
 
