@@ -1,6 +1,6 @@
-# py-sorting <http://github.com/GrowingWithTheWeb/py-sorting>
+# py-sorting <http://github.com/gwtw/py-sorting>
 # Copyright 2016 Daniel Imms <http://www.growingwiththeweb.com>
-# Released under the MIT license <http://github.com/GrowingWithTheWeb/py-sorting/blob/master/LICENSE>
+# Released under the MIT license <http://github.com/gwtw/py-sorting/blob/master/LICENSE>
 
 import insertion_sort
 import math

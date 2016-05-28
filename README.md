@@ -1,6 +1,6 @@
 # py-sorting
 
-[![Build Status](http://img.shields.io/travis/GrowingWithTheWeb/py-sorting.svg?style=flat)](http://travis-ci.org/GrowingWithTheWeb/py-sorting)
+[![Build Status](http://img.shields.io/travis/gwtw/py-sorting.svg?style=flat)](http://travis-ci.org/gwtw/py-sorting)
 
 A collection of sorting algorithms written in Python.
 
@@ -14,4 +14,4 @@ MIT © [Daniel Imms](http://www.growingwiththeweb.com)
 
 ## See also
 
-* [js-sorting](https://github.com/GrowingWithTheWeb/js-sorting)
+* [js-sorting](https://github.com/gwtw/js-sorting)
