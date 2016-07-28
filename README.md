@@ -1,6 +1,6 @@
 # py-sorting
 
-[![Build Status](http://img.shields.io/travis/gwtw/py-sorting.svg?style=flat)](http://travis-ci.org/gwtw/py-sorting)
+[![Build Status](https://travis-ci.org/gwtw/py-sorting.svg?branch=master)](http://travis-ci.org/gwtw/py-sorting)
 
 A collection of sorting algorithms written in Python.
 
