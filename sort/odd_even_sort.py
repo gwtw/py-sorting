@@ -8,7 +8,7 @@ def sort(array, compare=default_compare):
   sorted = False
   while not sorted:
     sorted = inner_sort(array, 1, compare)
-    sorted = sorted and inner_sort(array, 0, compare)
+    sorted = inner_sort(array, 0, compare) and sorted
   return array
 
 def inner_sort(array, start_i, compare):
