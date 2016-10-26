@@ -11,7 +11,7 @@ def sort(array, maxValue=None):
       if array[i] > maxValue:
         maxValue = array[i]
 
-  buckets = [0] * (maxValue + 1);
+  buckets = [0] * (maxValue + 1)
   sortedIndex = 0
 
   for i in range(0, len(array)):
