@@ -8,7 +8,7 @@ import random
 from common.helpers import default_compare
 
 def sort(array, compare=default_compare):
-  return inner_sort(array, 0, len(array) - 1, compare);
+  return inner_sort(array, 0, len(array) - 1, compare)
 
 def inner_sort(array, left, right, compare=default_compare):
   if left < right:

@@ -23,4 +23,4 @@ def sort(array, compare=default_compare):
       if compare(array[i], array[i + 1]) > 0:
         array[i], array[i + 1] = array[i + 1], array[i]
         swapped = True
-  return array;
+  return array

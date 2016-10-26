@@ -20,7 +20,7 @@ def sort(array, compare=default_compare):
   for i in range(middle, len(array)):
     right.append(array[i])
 
-  return merge(sort(left, compare), sort(right, compare), compare);
+  return merge(sort(left, compare), sort(right, compare), compare)
 
 def merge(left, right, compare):
   result = []
