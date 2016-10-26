@@ -3,7 +3,6 @@
 # Released under the MIT license <http://github.com/gwtw/py-sorting/blob/master/LICENSE>
 
 import math
-import random
 
 from common.helpers import default_compare
 
