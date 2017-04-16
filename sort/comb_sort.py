@@ -15,11 +15,9 @@ def sort(array, compare=default_compare):
     if gap > 1:
       gap = math.floor(gap / shrinkFactor)
     swapped = False
-    i = 0
     for i in range(len(array) - gap):
       if compare(array[i], array[i + gap]) > 0:
         array[i], array[i + gap] = array[i + gap], array[i]
         swapped = True
-      i += 1
 
   return array
